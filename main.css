@@ -1,28 +1,37 @@
-*{
-font-family: sans-serif ;
+body {
+	font-family: sans-serif;
+	background-color: #eee;
+	color: #222;
+}
+
+#container{
+	width:90%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #center{
-height:100%;
-width:99,99%;
-margin-right:auto;
-margin-left:auto;
-background-color: orange;
+	height:100%;
+	width:99,99%;
+	margin-right:auto;
+	margin-left:auto;
 }
 
 
 #logo{
-text-align: center;
-font-size: 4em;
-margin-right:auto;
-margin-left:auto;
-background-color: maroon;
+	text-align: center;
+	font-size: 4em;
+	margin-right:auto;
+	margin-left:auto;
+	background-color: maroon;
+	color: #eee;
 }
 
 #faces{
-margin-right:auto;
-margin-left:auto;
-background-color:white;
+	background-color:#f70;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-bottom: 2em;
 }
 
 #faces img{
@@ -30,18 +39,31 @@ background-color:white;
 }
 
 #intro{
-        padding: 0 10%;
+    padding: 0%, 10%;
 }
 
 #intro h1{
-font-size:3em;
+	font-size:3em;
 }
 
 #intro p{
-font-size: 2em;
-text-align: justify;
+	font-size: 2em;
 }
 
 .hidden {
   display: none;
+}
+
+p {
+	text-align: justify;
+}
+
+.blog-post .title{
+	font-size: 8em;
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+.blog-post .picture-background{
+	width: 100%;
 }
