@@ -1,0 +1,51 @@
+*{
+font-family: sans-serif ;
+}
+
+#center{
+height:100%;
+width:99,99%;
+margin-right:auto;
+margin-left:auto;
+background-color: orange;
+}
+
+
+#logo{
+text-align: center;
+font-size: 4em;
+margin-right:auto;
+margin-left:auto;
+background-color: maroon;
+}
+
+#faces{
+margin-right:auto;
+margin-left:auto;
+background-color:white;
+}
+
+#faces img{
+    padding: 10px;
+}
+
+#intro{
+        padding: 0 10%;
+}
+
+#intro h1{
+font-size:3em;
+}
+
+#intro p{
+font-size: 2em;
+text-align: justify;
+}
+
+    
+
+
+
+
+
+
