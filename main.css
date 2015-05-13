@@ -42,10 +42,6 @@ font-size: 2em;
 text-align: justify;
 }
 
-    
-
-
-
-
-
-
+.hidden {
+  display: none;
+}
