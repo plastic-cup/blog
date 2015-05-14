@@ -53,6 +53,18 @@ test('menu project link, links to project page', function(assert){
 	},200)
 })
 
+test('menu project link, links to blog page', function(assert){
+	var iframe = document.getElementById('iframe');
+	var target = iframe.contentDocument || iframe.contentWindow.document;
+	target.getElementById('blog-link').click();
+	var done = assert.async();
+	setTimeout(function(){
+		var target = iframe.contentDocument || iframe.contentWindow.document;
+		equal(target.title, 'Blog')
+		done();
+	},200)
+})
+
 
 // #navContainer
 	//#hamburger
