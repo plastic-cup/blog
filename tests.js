@@ -10,7 +10,7 @@ test('having a logo (something on page has id of logo)', function(){
 	// 	if (argument === true) TEST PASS
 	// 	else TEST FAIL
 	// }
-})
+});
 
 test('logo reads "Unnamed team"', function(){
 	var iframe = document.getElementById('iframe');
@@ -24,4 +24,24 @@ test('logo reads "Unnamed team"', function(){
 	// 	if (argument === true) TEST PASS
 	// 	else TEST FAIL
 	// }
+});
+
+//test default menu invisible
+
+test('check clicking the hamburger toggles the menu', function(assert){
+	var iframe = document.getElementById('iframe');
+	var target = iframe.contentDocument || iframe.contentWindow.document;
+	target.getElementById('hamburger').click();
+	var done = assert.async();
+	setTimeout(function(){
+		var element = target.getElementById('navigation')
+		var displayValue = element.style.display;
+		notEqual(displayValue, 'none');
+		done();
+	},1000)
 })
+
+// #navContainer
+	//#hamburger
+	//div#navigation
+		// ul
