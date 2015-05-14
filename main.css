@@ -1,13 +1,19 @@
+* {
+	margin: 0;
+}
+
 body {
 	font-family: sans-serif;
 	background-color: #eee;
 	color: #222;
 }
 
+div {
+	margin-bottom: 7.5%;
+}
+
 #container{
-	width:90%;
-	margin-left: auto;
-	margin-right: auto;
+	width:100%;
 }
 
 #center{
@@ -19,16 +25,25 @@ body {
 
 
 #logo{
+	width: 8em;
+	height: 8em;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
 	font-size: 4em;
-	margin-right:auto;
-	margin-left:auto;
 	background-color: maroon;
 	color: #eee;
+	border-radius: 50%;
+	margin-top: 7.5%;
+}
+
+#logo h1 {
+	position: relative;
+	top: 27.5%;
+	font-size: 1.65em;
 }
 
 #faces{
-	background-color:#f70;
 	padding-top: 1em;
 	padding-bottom: 1em;
 	margin-bottom: 2em;
@@ -48,14 +63,36 @@ body {
 
 #intro p{
 	font-size: 2em;
+	padding: 8%;
 }
 
 .hidden {
   display: none;
 }
 
+.profile {
+	width: 90%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid maroon 1px;
+	background: maroon;
+	color: white;
+}
+
+.profile p {
+	padding: 1em;
+	font-size: 2.5em;
+}
+
 p {
 	text-align: justify;
+}
+
+.blog-post {
+	text-align: center;
+	padding: 5%;
+	margin-bottom: 10%;
 }
 
 .blog-post .title{
@@ -65,5 +102,5 @@ p {
 }
 
 .blog-post .picture-background{
-	width: 100%;
+	width: 90%;
 }
