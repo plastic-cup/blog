@@ -108,10 +108,11 @@ p {
 	text-align: justify;
 }
 
-.blog-post, #projects {
+.blog-post, .projects {
 	text-align: center;
 	padding: 5%;
 	margin-bottom: 10%;
+	border: solid black 1px;
 }
 
 .blog-post .title, #projects .title{
@@ -124,9 +125,6 @@ p {
 	width: 90%;
 }
 
-.snippet-content {
-	border: 2px solid black;
-}
 
 .read-more {
 	border: 2px solid black;
