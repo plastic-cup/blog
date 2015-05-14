@@ -9,5 +9,11 @@ Learn how to produce responsive websites by creating a showcase of the skills de
 * Project page
 
 ##Stakeholders
+* Us
+* Family and friends
+* Peers
+* Potential employers
+
+
 
 
