@@ -73,6 +73,28 @@ test('if a carousel element exists ', function(){
 	equal(!!initial,true)
 });
 
+test(‘If a carousel container exists”, function (){
+	var iframe = document.getElementById(‘iframe’);
+	var target = iframe.contentDocument || iframe.contentWindow.document;
+	var initial=target.getElementById(‘carouselContainer’);
+	equal(!!initial,true);
+}
+
+test(‘If clicking the arrow will go to next post”, function (){
+	var iframe = document.getElementById('iframe');
+	var target = iframe.contentDocument || iframe.contentWindow.document;
+	var children = target.getElementById(‘carousel’).children;
+	for(var i = 0; i<children.length;i++){
+		if(children[i].style.display !==’none’) var seen =children[i];	
+	target.getElementById(‘ARROW’).click();
+	var done=assert.async(); 
+	setTimeout(function(){
+		equal(	seen.style.display, ‘none’);
+		done();
+	},200)
+})
+
+
 
 // #navContainer
 	//#hamburger
