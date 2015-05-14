@@ -12,6 +12,13 @@ div {
 	margin-bottom: 7.5%;
 }
 
+hr {
+	margin-bottom: 5%;
+	height: 3px;
+	background-color: black;
+	border: none;
+}
+
 #container{
 	width:100%;
 }
@@ -134,12 +141,24 @@ p {
 	text-align: justify;
 }
 
-.blog-post, .projects {
-	width: 60%;
-	text-align: center;
-	padding: 5%;
-	margin-left: auto;
+.page-link{
+	margin-bottom: 8px;
+}
+
+.page-link a{
+	text-decoration: none;
+}
+
+#carousel-container{
+	width: 70%;
+	margin-left: auto; /* these two lines centre it */
 	margin-right: auto;
+	padding: 5%;
+}
+
+.blog-post, .projects {
+	width: 100%;
+	text-align: center;
 	margin-bottom: 10%;
 	border: solid black 1px;
 	box-shadow: 10px 10px 10px rgba(10,10,10,0.5); /* 3rd param = blur radius. rgba --> a is for opacity */
@@ -153,6 +172,10 @@ p {
 
 .blog-post .picture-background, .projects .picture-background{
 	width: 90%;
+}
+
+.blog-post p, .projects p {
+	padding: 5%;
 }
 
 .snippet-content{
