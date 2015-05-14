@@ -25,3 +25,7 @@ $('#Rafe').click(function(){
   $('#RafeProfile').toggleClass('hidden');
   $('#AnniProfile').addClass('hidden');
 });
+
+$('#hamburger').click(function(){
+  $('#navigation').toggleClass('hidden');
+});
