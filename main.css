@@ -152,7 +152,7 @@ p {
 	font-size: 3.2em;
 }
 
-#carousel-container{ /* also used for blog.html */
+#carousel-container{
 	width: 70%;
 	margin-left: auto; /* these two lines centre it */
 	margin-right: auto;
@@ -165,11 +165,6 @@ p {
 	margin-bottom: 10%;
 	border: solid black 1px;
 	box-shadow: 15px 15px 10px rgba(10,10,10,0.5); /* 3rd param = blur radius. rgba --> a is for opacity */
-
-}
-
-.main-blog { /* blog cards on blog.html */
-	 /* amount needed to clear nav bar */
 }
 
 .mini-blog .title, .projects .title{
@@ -196,11 +191,4 @@ p {
 	background-color: #262626;
 	border-radius: 7%;
 	padding: 1%;
-}
-
-#blog-container{ /* also used for blog.html */
-	width: 70%;
-	margin-left: auto; /* these two lines centre it */
-	margin-right: auto;
-	padding: 135px, 5%, 5%, 5%;
 }
