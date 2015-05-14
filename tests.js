@@ -62,7 +62,7 @@ test('menu blog link, links to blog page', function(assert){
 		var target = iframe.contentDocument || iframe.contentWindow.document;
 		equal(target.title, 'Blog')
 		done();
-	},200)
+	},2000)
 })
 
 
