@@ -152,32 +152,37 @@ p {
 	font-size: 3.2em;
 }
 
-#carousel-container{
+#carousel-container{ /* also used for blog.html */
 	width: 70%;
 	margin-left: auto; /* these two lines centre it */
 	margin-right: auto;
 	padding: 5%;
 }
 
-.blog-post, .projects {
+.mini-blog, .projects {
 	width: 100%;
 	text-align: center;
 	margin-bottom: 10%;
 	border: solid black 1px;
 	box-shadow: 15px 15px 10px rgba(10,10,10,0.5); /* 3rd param = blur radius. rgba --> a is for opacity */
+
 }
 
-.blog-post .title, .projects .title{
+.main-blog { /* blog cards on blog.html */
+	 /* amount needed to clear nav bar */
+}
+
+.mini-blog .title, .projects .title{
 	font-size: 4em;
 	text-align: center;
 	padding-bottom: 1em;
 }
 
-.blog-post .picture-background, .projects .picture-background{
+.mini-blog .picture-background, .projects .picture-background{
 	width: 90%;
 }
 
-.blog-post p, .projects p {
+.mini-blog p, .projects p {
 	padding: 5%;
 }
 
@@ -191,4 +196,11 @@ p {
 	background-color: #262626;
 	border-radius: 7%;
 	padding: 1%;
+}
+
+#blog-container{ /* also used for blog.html */
+	width: 70%;
+	margin-left: auto; /* these two lines centre it */
+	margin-right: auto;
+	padding: 135px, 5%, 5%, 5%;
 }
