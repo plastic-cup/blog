@@ -65,6 +65,14 @@ test('menu blog link, links to blog page', function(assert){
 	},2000)
 })
 
+test('having a logo (something on page has id of logo)', function(){
+	var iframe = document.getElementByClass('iframe');
+	var target = iframe.contentDocument || iframe.contentWindow.document;
+	var initial = target.getElementById('carousel');
+
+	equal(!!initial,true)
+});
+
 
 // #navContainer
 	//#hamburger
