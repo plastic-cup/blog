@@ -16,6 +16,9 @@ div {
 	width:100%;
 }
 
+#background{
+	background : url('http://patterncooler.com/gen/index/w/simple_moroccan_tiles_pattern-1018.jpg');
+}
 
 #logo{
 	width: 8em;
