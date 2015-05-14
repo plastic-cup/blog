@@ -135,19 +135,23 @@ p {
 }
 
 .blog-post, .projects {
+	width: 60%;
 	text-align: center;
 	padding: 5%;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 10%;
 	border: solid black 1px;
+	box-shadow: 10px 10px 10px rgba(10,10,10,0.5); /* 3rd param = blur radius. rgba --> a is for opacity */
 }
 
-.blog-post .title, #projects .title{
+.blog-post .title, .projects .title{
 	font-size: 4em;
 	text-align: center;
 	padding-bottom: 1em;
 }
 
-.blog-post .picture-background, #projects .picture-background{
+.blog-post .picture-background, .projects .picture-background{
 	width: 90%;
 }
 
