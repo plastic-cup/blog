@@ -10,13 +10,6 @@ body {
 	margin-right: auto;
 }
 
-#center{
-	height:100%;
-	width:99,99%;
-	margin-right:auto;
-	margin-left:auto;
-}
-
 
 #logo{
 	text-align: center;
@@ -35,15 +28,18 @@ body {
 }
 
 #faces img{
-    padding: 10px;
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 20%;
 }
 
 #intro{
-    padding: 0%, 10%;
+	padding: 0%, 10%;
 }
 
-#intro h1{
-	font-size:3em;
+#intro h1 {
+	font-size: 4em;
+	text-align: center;
 }
 
 #intro p{
@@ -51,7 +47,7 @@ body {
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 p {
@@ -59,11 +55,20 @@ p {
 }
 
 .blog-post .title{
-	font-size: 8em;
+	font-size: 4em;
 	text-align: center;
 	padding-bottom: 1em;
 }
 
 .blog-post .picture-background{
 	width: 100%;
+}
+
+.snippet-content {
+	border: 2px solid black;
+}
+
+.read-more {
+	border: 2px solid black;
+	margin-left: auto;
 }
