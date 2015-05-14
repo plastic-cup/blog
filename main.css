@@ -13,7 +13,7 @@ div {
 }
 
 hr {
-	margin-bottom: 5%;
+	margin-bottom: 15%;
 	height: 3px;
 	background-color: black;
 	border: none;
@@ -143,10 +143,13 @@ p {
 
 .page-link{
 	margin-bottom: 8px;
+
 }
 
 .page-link a{
 	text-decoration: none;
+	color: #262626;
+	font-size: 3.2em;
 }
 
 #carousel-container{
@@ -161,7 +164,7 @@ p {
 	text-align: center;
 	margin-bottom: 10%;
 	border: solid black 1px;
-	box-shadow: 10px 10px 10px rgba(10,10,10,0.5); /* 3rd param = blur radius. rgba --> a is for opacity */
+	box-shadow: 15px 15px 10px rgba(10,10,10,0.5); /* 3rd param = blur radius. rgba --> a is for opacity */
 }
 
 .blog-post .title, .projects .title{
@@ -183,6 +186,9 @@ p {
 }
 
 .read-more {
-	border: 2px solid black;
 	margin-left: auto;
+	color: #e6e6e6;
+	background-color: #262626;
+	border-radius: 7%;
+	padding: 1%;
 }
