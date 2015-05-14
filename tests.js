@@ -65,6 +65,14 @@ test('menu blog link, links to blog page', function(assert){
 	},2000)
 })
 
+test('if a carousel element exists ', function(){
+	var iframe = document.getElementById('iframe');
+	var target = iframe.contentDocument || iframe.contentWindow.document;
+	var initial = target.getElementByClassName('carousel');
+
+	equal(!!initial,true)
+});
+
 
 // #navContainer
 	//#hamburger
