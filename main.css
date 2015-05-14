@@ -16,9 +16,24 @@ div {
 	width:100%;
 }
 
+#hamburger {
+	position: fixed;
+	top: 25px;
+	right: 25px;
+	height: 125px;
+	width: 125px;
+}
+
+#hamburger div {
+	height: 25px;
+	width: 125px;
+	background: grey;
+}
+
 #background{
 	background : url('http://patterncooler.com/gen/index/w/simple_moroccan_tiles_pattern-1018.jpg');
-}
+	padding-top: 7.5%;
+	padding-bottom: 7.5%;
 
 #logo{
 	width: 8em;
@@ -30,7 +45,7 @@ div {
 	background-color: maroon;
 	color: #eee;
 	border-radius: 50%;
-	margin-top: 7.5%;
+	margin-bottom: 0;
 }
 
 #logo h1 {
@@ -88,19 +103,19 @@ p {
 	text-align: justify;
 }
 
-.blog-post {
+.blog-post, #projects {
 	text-align: center;
 	padding: 5%;
 	margin-bottom: 10%;
 }
 
-.blog-post .title{
+.blog-post .title, #projects .title{
 	font-size: 4em;
 	text-align: center;
 	padding-bottom: 1em;
 }
 
-.blog-post .picture-background{
+.blog-post .picture-background, #projects .picture-background{
 	width: 90%;
 }
 
