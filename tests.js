@@ -47,6 +47,7 @@ test('menu project link, links to project page', function(assert){
 	target.getElementById('project-link').click();
 	var done = assert.async();
 	setTimeout(function(){
+		var target = iframe.contentDocument || iframe.contentWindow.document;
 		equal(target.title, 'Projects')
 		done();
 	},200)
