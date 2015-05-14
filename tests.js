@@ -44,10 +44,10 @@ test('check clicking the hamburger toggles the menu', function(assert){
 test('menu project link, links to project page', function(assert){
 	var iframe = document.getElementById('iframe');
 	var target = iframe.contentDocument || iframe.contentWindow.document;
-	target.getElementById('BLABLABLABLA').click();
+	target.getElementById('project-link').click();
 	var done = assert.async();
 	setTimeout(function(){
-		equal(target.title, 'PROJECT TITLE')
+		equal(target.title, 'Projects')
 		done();
 	},200)
 })
