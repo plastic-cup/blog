@@ -73,7 +73,7 @@ test('if a carousel element exists ', function(){
 	equal(!!initial,true)
 });
 
-test(‘If a carousel container exists”, function (){
+test("If a carousel container exists", function (){
 	var iframe = document.getElementById(‘iframe’);
 	var target = iframe.contentDocument || iframe.contentWindow.document;
 	var initial=target.getElementById(‘carouselContainer’);
@@ -93,10 +93,3 @@ test(‘If clicking the arrow will go to next post”, function (){
 		done();
 	},200)
 })
-
-// ssh check
-
-// #navContainer
-	//#hamburger
-	//div#navigation
-		// ul
