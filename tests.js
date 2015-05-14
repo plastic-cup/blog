@@ -41,6 +41,18 @@ test('check clicking the hamburger toggles the menu', function(assert){
 	},1000)
 })
 
+test('menu project link, links to project page', function(assert){
+	var iframe = document.getElementById('iframe');
+	var target = iframe.contentDocument || iframe.contentWindow.document;
+	target.getElementById('BLABLABLABLA').click();
+	var done = assert.async();
+	setTimeout(function(){
+		equal(target.title, 'PROJECT TITLE')
+		done();
+	},200)
+})
+
+
 // #navContainer
 	//#hamburger
 	//div#navigation
