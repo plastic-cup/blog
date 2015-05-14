@@ -12,6 +12,13 @@ div {
 	margin-bottom: 7.5%;
 }
 
+hr {
+	margin-bottom: 5%;
+	height: 3px;
+	background-color: black;
+	border: none;
+}
+
 #container{
 	width:100%;
 }
@@ -105,8 +112,10 @@ div {
 }
 
 #intro p{
-	font-size: 2em;
+	font-size: 3em;
 	padding: 8%;
+	line-height: 1.3em;
+	word-spacing: 0.4em;
 }
 
 .hidden {
@@ -132,23 +141,46 @@ p {
 	text-align: justify;
 }
 
-.blog-post, .projects {
-	text-align: center;
-	padding: 5%;
-	margin-bottom: 10%;
-	border: solid black 1px;
+.page-link{
+	margin-bottom: 8px;
 }
 
-.blog-post .title, #projects .title{
+.page-link a{
+	text-decoration: none;
+}
+
+#carousel-container{
+	width: 70%;
+	margin-left: auto; /* these two lines centre it */
+	margin-right: auto;
+	padding: 5%;
+}
+
+.blog-post, .projects {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10%;
+	border: solid black 1px;
+	box-shadow: 10px 10px 10px rgba(10,10,10,0.5); /* 3rd param = blur radius. rgba --> a is for opacity */
+}
+
+.blog-post .title, .projects .title{
 	font-size: 4em;
 	text-align: center;
 	padding-bottom: 1em;
 }
 
-.blog-post .picture-background, #projects .picture-background{
+.blog-post .picture-background, .projects .picture-background{
 	width: 90%;
 }
 
+.blog-post p, .projects p {
+	padding: 5%;
+}
+
+.snippet-content{
+	font-size: 2em;
+}
 
 .read-more {
 	border: 2px solid black;
