@@ -105,8 +105,10 @@ div {
 }
 
 #intro p{
-	font-size: 2em;
+	font-size: 3em;
 	padding: 8%;
+	line-height: 1.3em;
+	word-spacing: 0.4em;
 }
 
 .hidden {
@@ -149,6 +151,9 @@ p {
 	width: 90%;
 }
 
+.snippet-content{
+	font-size: 2em;
+}
 
 .read-more {
 	border: 2px solid black;
