@@ -16,13 +16,6 @@ div {
 	width:100%;
 }
 
-#center{
-	height:100%;
-	width:99,99%;
-	margin-right:auto;
-	margin-left:auto;
-}
-
 
 #logo{
 	width: 8em;
@@ -50,15 +43,18 @@ div {
 }
 
 #faces img{
-    padding: 10px;
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 20%;
 }
 
 #intro{
-    padding: 0%, 10%;
+	padding: 0%, 10%;
 }
 
-#intro h1{
-	font-size:3em;
+#intro h1 {
+	font-size: 4em;
+	text-align: center;
 }
 
 #intro p{
@@ -67,7 +63,7 @@ div {
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 .profile {
@@ -96,11 +92,20 @@ p {
 }
 
 .blog-post .title{
-	font-size: 8em;
+	font-size: 4em;
 	text-align: center;
 	padding-bottom: 1em;
 }
 
 .blog-post .picture-background{
 	width: 90%;
+}
+
+.snippet-content {
+	border: 2px solid black;
+}
+
+.read-more {
+	border: 2px solid black;
+	margin-left: auto;
 }
