@@ -22,7 +22,7 @@ hr {
 
 #container{
 	width:100%;
-	
+
 }
 
 #hamburger {
@@ -185,6 +185,7 @@ p {
 
 .mini-blog, .mini-project{
 	width: 100%;
+	background-color: white;
 }
 
 .main-blog, .mini-blog, .mini-project {
