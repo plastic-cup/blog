@@ -30,28 +30,12 @@ $('#hamburger').click(function(){
   $('#navigation').toggleClass('hidden');
 });
 
-// var carouselShift = function(shiftAmount){
-//   var shift = shiftAmount || 1;
-//   var children = this.children;
-//   return function(){
-//     for(var i = 0; i < children.length; i+=1){
-//       if (children[i].style.display !== 'none') {
-//         children[i].style.display = 'none';
-//         children[i+shift].style.display = 'show';
-//         break;
-//       }
-//     }
-//   }
-// }
-
 var carouselShift = function(shiftAmount, newThis){
-  console.log('a');
   return function(){
   var children = newThis.parentNode.children;
   children = filterMethod.call(children, function(elem){
     return elem.className === 'mini-blog';
   })
-    console.log(children);
     var shift = shiftAmount || 1;
     for(var i = 0; i < children.length; i+=1){
       if(children[i].nodeType == 1){
@@ -70,11 +54,8 @@ var carouselShift = function(shiftAmount, newThis){
 var filterMethod = Array.prototype.filter;
 
 filterMethod.call(filterMethod.call(document.getElementById('blog-carousel').children, function(element){
-  console.log(element, 'a');
-  console.log(element.className);
   return element.className === 'carousel';
 }).children , function(element){
-  console.log(element,'b');
   return element.className === 'right-arrow';
 }).forEach(function(element){
   element.addEventListener("click",carouselShift(1, element))
