@@ -83,44 +83,44 @@ var carouselShift = function(shiftAmount, newThis){
 
 var filterMethod = Array.prototype.filter;
 
-filterMethod.call(document.getElementsByClassName('carousel')[0].childNodes, function(element){
+filterMethod.call(document.getElementsByClassName('carousel')[0].children[0].children, function(element){
   return element.className === 'right-arrow';
 }).forEach(function(element){
   element.addEventListener("click",carouselShift(1, element))
 })
 
-var start;
-var stop;
-var variables = {
-  startX: 0,
-  ev: undefined
-}
-var start = function(ev,elem){
-  return function(){
-    variables.startX = ev.pageX;
-    variables.ev = ev;
-  }
-}
+// var start;
+// var stop;
+// var variables = {
+//   startX: 0,
+//   ev: undefined
+// }
+// var start = function(ev,elem){
+//   return function(){
+//     variables.startX = ev.pageX;
+//     variables.ev = ev;
+//   }
+// }
 
-var stop = function(ev,elem){
-  var distX = ev.pageX - variables.startX;
-  console.log(distX);
-  if (distX > 100){
-    this.carouselShift(-1);
-  }
-  if (distX < -100){
-    this.carouselShift(1);
-  }
-}
+// var stop = function(ev,elem){
+//   var distX = ev.pageX - variables.startX;
+//   console.log(distX);
+//   if (distX > 100){
+//     this.carouselShift(-1);
+//   }
+//   if (distX < -100){
+//     this.carouselShift(1);
+//   }
+// }
 
-filterMethod.call(document.getElementsByClassName('carousel')[0].children, function(element){
-  return element.className === 'mini-blog' || element.class === 'projects';
-}).forEach(function(element){element.addEventListener("touchstart",function(ev){
-  start(ev,element);
-})});
+// filterMethod.call(document.getElementsByClassName('carousel')[0].children, function(element){
+//   return element.className === 'mini-blog' || element.class === 'projects';
+// }).forEach(function(element){element.addEventListener("touchstart",function(ev){
+//   start(ev,element);
+// })});
 
-filterMethod.call(document.getElementsByClassName('carousel')[0].children, function(element){
-  return element.className === 'mini-blog' || element.class === 'projects';
-}).forEach(function(element){element.addEventListener("touchend",function(ev){
-  stop(ev,element);
-})});
+// filterMethod.call(document.getElementsByClassName('carousel')[0].children, function(element){
+//   return element.className === 'mini-blog' || element.class === 'projects';
+// }).forEach(function(element){element.addEventListener("touchend",function(ev){
+//   stop(ev,element);
+// })});
