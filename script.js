@@ -44,6 +44,22 @@ var carouselShift = function(shiftAmount){
   }
 }
 
+var start;
+var stop;
+var start = function(){
+      this.startX = pageX
+    }
+
+var stop = function(){
+  distX = this.pageX - startX;
+  if (distX > 100){
+    this.carouselShift(-1);
+  }
+  if (distX < -100){
+    this.carouselShift(1);
+  }
+}
+
 document.getElementsByClassName('carousel').children.filter(function(element){
   return element.class === 'rightArrow';
 }).forEach(addEventListener("click",carouselShift(1)));
@@ -51,3 +67,11 @@ document.getElementsByClassName('carousel').children.filter(function(element){
 document.getElementsByClassName('carousel').children.filter(function(element){
   return element.class === 'rightArrow';
 }).forEach(addEventListener("click",carouselShift(-1)));
+
+document.getElementsByClassName('carousel').children.filter(function(element){
+  return element.class === 'mini-blog' || element.class === 'mini-project';
+}).forEach(addEventListener("touchstart",start));
+
+document.getElementsByClassName('carousel').children.filter(function(element){
+  return element.class === 'mini-blog' || element.class === 'mini-project';
+}).forEach(addEventListener("touchend",stop));

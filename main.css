@@ -6,6 +6,7 @@ body {
 	font-family: sans-serif;
 	background-color: #eee;
 	color: #222;
+	background-image: url('images/bg.png');
 }
 
 div {
@@ -21,6 +22,7 @@ hr {
 
 #container{
 	width:100%;
+	
 }
 
 #hamburger {
@@ -152,32 +154,57 @@ p {
 	font-size: 3.2em;
 }
 
-#carousel-container{
-	width: 70%;
+#carousel-container, #main-blog-container{
+	width: 80%;
 	margin-left: auto; /* these two lines centre it */
 	margin-right: auto;
 	padding: 5%;
+	overflow: auto; /* container stretches if contents are too big */
 }
 
-.blog-post, .projects {
+#main-blog-container{
+	width: 95%;
+	padding: 0;
+	margin-top: 10%;
+
+}
+
+#blog-h1{
+	margin-bottom: 8%;
+	font-size: 5em;
+}
+
+
+.main-blog{ /* OVER HERE */
+	width: 40%;
+	margin-left: 5%;
+	float: left;
+	padding: 10px;
+	background-color: white;
+}
+
+.mini-blog, .projects{
 	width: 100%;
+}
+
+.main-blog, .mini-blog, .projects {
 	text-align: center;
 	margin-bottom: 10%;
 	border: solid black 1px;
 	box-shadow: 15px 15px 10px rgba(10,10,10,0.5); /* 3rd param = blur radius. rgba --> a is for opacity */
 }
 
-.blog-post .title, .projects .title{
+.main-blog .title, .mini-blog .title, .projects .title{
 	font-size: 4em;
 	text-align: center;
 	padding-bottom: 1em;
 }
 
-.blog-post .picture-background, .projects .picture-background{
+.main-blog .picture-background, .mini-blog .picture-background, .projects .picture-background{
 	width: 90%;
 }
 
-.blog-post p, .projects p {
+.main-blog p, .mini-blog p, .projects p {
 	padding: 5%;
 }
 
@@ -261,7 +288,7 @@ p {
 		padding-bottom: 12.5%;
 		opacity: 0.3;
 	}
-	#carousel-container {
+	#carousel-container{ /* maybe add #main-blog-container */
 		padding: 0;
 		display: inline-block;
 		width: 100%;
@@ -277,7 +304,7 @@ p {
 		float: right;
 		width: 40%;
 	}
-	.blog-post .picture-background, .projects .picture-background {
+	.mini-blog .picture-background, .projects .picture-background {
 		height: 60%;
 		width: 60%;
 	}
