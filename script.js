@@ -69,15 +69,17 @@ var carouselShift = function(shiftAmount, newThis){
 
 var filterMethod = Array.prototype.filter;
 
-filterMethod.call(filterMethod.call(document.getElementById('blog-carousel').children, function(element){
+// filterMethod.call
+console.log(filterMethod.call(document.getElementById('blog-carousel').children, function(element){
   console.log(element, 'a');
   return element.className === 'carousel';
-}).children, function(element){
-  console.log(element,'b');
-  return element.className === 'right-arrow';
-}).forEach(function(element){
-  element.addEventListener("click",carouselShift(1, element))
-})
+}).children);
+// , function(element){
+//   console.log(element,'b');
+//   return element.className === 'right-arrow';
+// }).forEach(function(element){
+//   element.addEventListener("click",carouselShift(1, element))
+// })
 
 // var start;
 // var stop;
