@@ -29,3 +29,25 @@ $('#Rafe').click(function(){
 $('#hamburger').click(function(){
   $('#navigation').toggleClass('hidden');
 });
+
+var carouselShift = function(shiftAmount){
+  var shift = shiftAmount || 1;
+  var children = this.children;
+  return function(){
+    for(var i = 0; i < children.length; i+=1){
+      if (children[i].style.display !== 'none') {
+        children[i].style.display = 'none';
+        children[i+shift].style.display = 'show';
+        break;
+      }
+    }
+  }
+}
+
+document.getElementsByClassName('carousel').children.filter(function(element){
+  return element.class === 'rightArrow';
+}).forEach(addEventListener("click",carouselShift(1)));
+
+document.getElementsByClassName('carousel').children.filter(function(element){
+  return element.class === 'rightArrow';
+}).forEach(addEventListener("click",carouselShift(-1)));
