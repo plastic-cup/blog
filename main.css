@@ -193,7 +193,7 @@ p {
 	padding: 1%;
 }
 
-@media screen and (min-width: 750px){
+@media screen and (min-width: 1000px){
 	#navContainer {
 		position: absolute;
 		top: 0px;
