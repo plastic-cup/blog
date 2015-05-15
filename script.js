@@ -70,8 +70,8 @@ document.getElementsByClassName('carousel').children.filter(function(element){
 
 document.getElementsByClassName('carousel').children.filter(function(element){
   return element.class === 'mini-blog' || element.class === 'mini-project';
-}).forEach(addEventListener("touchstart",start);
+}).forEach(addEventListener("touchstart",start));
 
 document.getElementsByClassName('carousel').children.filter(function(element){
   return element.class === 'mini-blog' || element.class === 'mini-project';
-}).forEach(addEventListener("touchend",stop);
+}).forEach(addEventListener("touchend",stop));
