@@ -47,10 +47,10 @@ var carouselShift = function(shiftAmount){
 var carouselShift = function(shiftAmount, newThis){
   return function(){
   var children = newThis.parentNode.children;
-  console.log(children);
   children = filterMethod.call(children, function(elem){
     return elem.className === 'mini-blog';
   })
+    console.log(children);
     var shift = shiftAmount || 1;
     for(var i = 0; i < children.length; i+=1){
       if(children[i].nodeType == 1){
