@@ -44,22 +44,6 @@ var carouselShift = function(shiftAmount){
   }
 }
 
-var start;
-var stop;
-var start = function(){
-      this.startX = pageX
-    }
-
-var stop = function(){
-  distX = this.pageX - startX;
-  if (distX > 100){
-    this.carouselShift(-1);
-  }
-  if (distX < -100){
-    this.carouselShift(1);
-  }
-}
-
 var carouselShift = function(shiftAmount, newThis){
   return function(){
   var children = newThis.parentNode.children;
