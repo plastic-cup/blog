@@ -275,7 +275,7 @@ p {
 		float: right;
 		width: 40%;
 	}
-	.blog-post .picture-background, .projects .picture-background {
+	.mini-blog .picture-background, .projects .picture-background {
 		height: 60%;
 		width: 60%;
 	}
