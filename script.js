@@ -47,9 +47,7 @@ $('#hamburger').click(function(){
 var carouselShift = function(shiftAmount, newThis){
   console.log('a');
   return function(){
-    console.log('b');
   var children = newThis.parentNode.children;
-  console.log(children);
   children = filterMethod.call(children, function(elem){
     return elem.className === 'mini-blog';
   })
