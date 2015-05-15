@@ -74,7 +74,7 @@ filterMethod.call(filterMethod.call(document.getElementById('blog-carousel').chi
   return element.className === 'carousel';
 }).children, function(element){
   console.log(element,'b');
-  returnelement.className === 'right-arrow';
+  return element.className === 'right-arrow';
 }).forEach(function(element){
   element.addEventListener("click",carouselShift(1, element))
 })
