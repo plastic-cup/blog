@@ -73,7 +73,7 @@ var filterMethod = Array.prototype.filter;
 console.log(filterMethod.call(document.getElementById('blog-carousel').children, function(element){
   console.log(element, 'a');
   return element.className === 'carousel';
-}).children);
+}));
 // , function(element){
 //   console.log(element,'b');
 //   return element.className === 'right-arrow';
