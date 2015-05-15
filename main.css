@@ -243,6 +243,9 @@ p {
     padding-bottom:5em;
 }
 
+#profiles {
+	clear: both;
+}
 
 .profile-img{
     width: 20%;
