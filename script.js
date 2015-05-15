@@ -74,7 +74,7 @@ console.log(filterMethod.call(document.getElementById('blog-carousel').children,
   console.log(element, 'a');
   console.log(element.className);
   return element.className === 'carousel';
-}));
+}).children);
 // , function(element){
 //   console.log(element,'b');
 //   return element.className === 'right-arrow';
