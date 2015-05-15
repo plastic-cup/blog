@@ -120,6 +120,7 @@ hr {
 	padding-left: 2%;
 	padding-right: 2%;
 	width: 20%;
+	border-radius: 7%;
 }
 
 #intro{
@@ -250,6 +251,7 @@ p {
 .profile-img{
     width: 20%;
     float:left;
+    border-radius: 7%;
 
 }
 
