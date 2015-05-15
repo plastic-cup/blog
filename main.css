@@ -183,28 +183,28 @@ p {
 	background-color: white;
 }
 
-.mini-blog, .projects{
+.mini-blog, .mini-project{
 	width: 100%;
 }
 
-.main-blog, .mini-blog, .projects {
+.main-blog, .mini-blog, .mini-project {
 	text-align: center;
 	margin-bottom: 10%;
 	border: solid black 1px;
 	box-shadow: 15px 15px 10px rgba(10,10,10,0.5); /* 3rd param = blur radius. rgba --> a is for opacity */
 }
 
-.main-blog .title, .mini-blog .title, .projects .title{
+.main-blog .title, .mini-blog .title, .mini-project .title{
 	font-size: 4em;
 	text-align: center;
 	padding-bottom: 1em;
 }
 
-.main-blog .picture-background, .mini-blog .picture-background, .projects .picture-background{
+.main-blog .picture-background, .mini-blog .picture-background, .mini-project .picture-background{
 	width: 90%;
 }
 
-.main-blog p, .mini-blog p, .projects p {
+.main-blog p, .mini-blog p, .mini-project p {
 	padding: 5%;
 }
 
@@ -304,7 +304,7 @@ p {
 		float: right;
 		width: 40%;
 	}
-	.mini-blog .picture-background, .projects .picture-background {
+	.mini-blog .picture-background, .mini-project .picture-background {
 		height: 60%;
 		width: 60%;
 	}
