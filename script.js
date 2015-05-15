@@ -30,23 +30,23 @@ $('#hamburger').click(function(){
   $('#navigation').toggleClass('hidden');
 });
 
-var carouselShift = function(shiftAmount){
-  var shift = shiftAmount || 1;
-  var children = this.children;
-  return function(){
-    for(var i = 0; i < children.length; i+=1){
-      if (children[i].style.display !== 'none') {
-        children[i].style.display = 'none';
-        children[i+shift].style.display = 'show';
-        break;
-      }
-    }
-  }
-}
+// var carouselShift = function(shiftAmount){
+//   var shift = shiftAmount || 1;
+//   var children = this.children;
+//   return function(){
+//     for(var i = 0; i < children.length; i+=1){
+//       if (children[i].style.display !== 'none') {
+//         children[i].style.display = 'none';
+//         children[i+shift].style.display = 'show';
+//         break;
+//       }
+//     }
+//   }
+// }
 
 var carouselShift = function(shiftAmount, newThis){
   return function(){
-  var children = newThis.children;
+  var children = newThis.parentNode.children;
   console.log(children);
   children = filterMethod.call(children, function(elem){
     return elem.className === 'mini-blog';
