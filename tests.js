@@ -95,4 +95,4 @@ test('If clicking the arrow will go to next post', function (){
 			},200)
 		}
 	}
-)
+})
