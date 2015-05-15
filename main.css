@@ -142,7 +142,7 @@ hr {
     display: none;
 }
 
-.main-profile {
+.profile {
 	width: 90%;
 	height: auto;
 	margin-left: auto;
@@ -152,7 +152,7 @@ hr {
 	color: white;
 }
 
-.main-profile p {
+.profile p {
 	padding: 1em;
 	font-size: 2.5em;
 }
