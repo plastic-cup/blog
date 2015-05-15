@@ -73,6 +73,12 @@ hr {
 	padding-bottom: 7.5%;
 }
 
+#logo-holder{
+	width: 100%;
+	display: block;
+	margin-bottom: 10%;
+}
+
 #logo{
 	width: 11em;
 	height: 11em;
@@ -90,6 +96,18 @@ hr {
 	position: relative;
 	top: 35%;
 	font-size: 1.65em;
+}
+
+#logo-holder #logo {
+	width: 10em;
+	height: 10em;
+	font-size: 1em;
+	position: absolute;
+	left: 550px;
+}
+
+#logo-holder #logo h1 {
+	top: 40%;
 }
 
 #faces{
