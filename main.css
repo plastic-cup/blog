@@ -124,7 +124,7 @@ hr {
     display: none;
 }
 
-.profile {
+.main-profile {
 	width: 90%;
 	height: auto;
 	margin-left: auto;
@@ -134,7 +134,7 @@ hr {
 	color: white;
 }
 
-.profile p {
+.main-profile p {
 	padding: 1em;
 	font-size: 2.5em;
 }
@@ -218,6 +218,31 @@ p {
 	background-color: #262626;
 	border-radius: 7%;
 	padding: 1%;
+}
+#main-profile h2{
+    padding-bottom:5em;
+}
+
+
+.profile-img{
+    width: 20%;
+    float:left;
+    
+}   
+
+#main-profile h3{
+    float:left; 
+    padding-left: 5%;
+}
+#main-profile p{
+    width: 70%;
+     float:left; 
+    padding-left: 5%;
+}
+
+
+#linkit {
+    clear:left;
 }
 
 @media screen and (min-width: 1000px){
