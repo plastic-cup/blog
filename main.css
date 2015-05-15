@@ -12,6 +12,13 @@ div {
 	margin-bottom: 7.5%;
 }
 
+hr {
+	margin-bottom: 15%;
+	height: 3px;
+	background-color: black;
+	border: none;
+}
+
 #container{
 	width:100%;
 }
@@ -105,8 +112,10 @@ div {
 }
 
 #intro p{
-	font-size: 2em;
+	font-size: 3em;
 	padding: 8%;
+	line-height: 1.3em;
+	word-spacing: 0.4em;
 }
 
 .hidden {
@@ -132,25 +141,129 @@ p {
 	text-align: justify;
 }
 
-.blog-post, .projects {
-	text-align: center;
-	padding: 5%;
-	margin-bottom: 10%;
-	border: solid black 1px;
+.page-link{
+	margin-bottom: 8%;
+	border-bottom: solid 1px black;
 }
 
-.blog-post .title, #projects .title{
+.page-link a{
+	text-decoration: none;
+	color: #262626;
+	font-size: 3.2em;
+}
+
+#carousel-container{
+	width: 70%;
+	margin-left: auto; /* these two lines centre it */
+	margin-right: auto;
+	padding: 5%;
+}
+
+.blog-post, .projects {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10%;
+	border: solid black 1px;
+	box-shadow: 15px 15px 10px rgba(10,10,10,0.5); /* 3rd param = blur radius. rgba --> a is for opacity */
+}
+
+.blog-post .title, .projects .title{
 	font-size: 4em;
 	text-align: center;
 	padding-bottom: 1em;
 }
 
-.blog-post .picture-background, #projects .picture-background{
+.blog-post .picture-background, .projects .picture-background{
 	width: 90%;
 }
 
+.blog-post p, .projects p {
+	padding: 5%;
+}
+
+.snippet-content{
+	font-size: 2em;
+}
 
 .read-more {
-	border: 2px solid black;
 	margin-left: auto;
+	color: #e6e6e6;
+	background-color: #262626;
+	border-radius: 7%;
+	padding: 1%;
+}
+
+@media screen and (min-width: 750px){
+	#navContainer {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		opacity: 1;
+		height: auto;
+		margin: 0;
+		background-color: #2f2f2f;
+		opacity: 0.9;
+		padding: 10px 0;
+	}
+	#navigation {
+		display: inline;
+		background-color: #2f2f2f;
+	}
+	#navigation ul {
+		background-color: #2f2f2f;
+		text-align: right;
+	}
+	#navigation ul li {
+		display: inline;
+		font-size: 2em;
+		background-color: #2f2f2f;
+		padding: 0 20px;
+	}
+	#navigation ul li a {
+		color: white;
+	}
+	#hamburger {
+		display: none;
+	}
+	#background{
+		margin-top: 0;
+		padding-top: 0;
+		height: 90vh;
+	}
+	#logo {
+		position: absolute;
+		top: 75px;
+		left: 500px;
+		height: 8em;
+		width: 8em;
+		font-size: 2em;
+		text-align: center;
+	}
+	#intro {
+		position: absolute;
+		top: 250px;
+		font-size: 0.75em;
+		color: white;
+	}
+	#overlay {
+		height: 100%;
+		background-color: black;
+		padding-bottom: 7.5%;
+		opacity: 0.3;
+	}
+	#carousel-container {
+		padding: 0;
+		display: inline-block;
+		width: 100%;
+	}
+	#blog-carousel {
+		margin-left: 5%;
+		float: left;
+		width: 40%;
+	}
+	#project-carousel {
+		margin-right: 5%;
+		float: right;
+		width: 40%;
+	}
 }
