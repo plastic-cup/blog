@@ -259,7 +259,7 @@ p {
 		padding-bottom: 7.5%;
 		opacity: 0.3;
 	}
-	#carousel-container {
+	#carousel-container{ /* maybe add #main-blog-container */
 		padding: 0;
 		display: inline-block;
 		width: 100%;
