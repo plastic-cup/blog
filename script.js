@@ -46,8 +46,8 @@ var carouselShift = function(shiftAmount){
 
 document.getElementsByClassName('carousel').children.filter(function(element){
   return element.class === 'rightArrow';
-}).forEach.onClick("click",carouselShift(1));
+}).forEach(addEventListener("click",carouselShift(1)));
 
 document.getElementsByClassName('carousel').children.filter(function(element){
   return element.class === 'rightArrow';
-}).forEach.addEventListener("click",carouselShift(-1));
+}).forEach(addEventListener("click",carouselShift(-1)));
