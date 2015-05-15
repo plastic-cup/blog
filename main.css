@@ -142,8 +142,8 @@ p {
 }
 
 .page-link{
-	margin-bottom: 8px;
-
+	margin-bottom: 8%;
+	border-bottom: solid 1px black;
 }
 
 .page-link a{
@@ -199,4 +199,84 @@ p {
 	background-color: #262626;
 	border-radius: 7%;
 	padding: 1%;
+}
+
+@media screen and (min-width: 1000px){
+	#navContainer {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		opacity: 1;
+		height: auto;
+		margin: 0;
+		background-color: #2f2f2f;
+		opacity: 0.9;
+		padding: 10px 0;
+	}
+	#navigation {
+		display: inline;
+		background-color: #2f2f2f;
+	}
+	#navigation ul {
+		background-color: #2f2f2f;
+		text-align: right;
+	}
+	#navigation ul li {
+		display: inline;
+		font-size: 2em;
+		background-color: #2f2f2f;
+		padding: 0 20px;
+	}
+	#navigation ul li a {
+		color: white;
+	}
+	#hamburger {
+		display: none;
+	}
+	#background{
+		margin-top: 0;
+		padding-top: 0;
+		height: 90vh;
+	}
+	#logo {
+		position: absolute;
+		top: 75px;
+		left: 500px;
+		height: 8em;
+		width: 8em;
+		font-size: 2em;
+		text-align: center;
+	}
+	#intro {
+		position: absolute;
+		top: 250px;
+		font-size: 0.75em;
+		color: white;
+	}
+	#overlay {
+		height: 100%;
+		background-color: black;
+		padding-bottom: 7.5%;
+		opacity: 0.3;
+	}
+	#carousel-container {
+		padding: 0;
+		display: inline-block;
+		width: 100%;
+		font-size: 0.5em;
+	}
+	#blog-carousel {
+		margin-left: 5%;
+		float: left;
+		width: 40%;
+	}
+	#project-carousel {
+		margin-right: 5%;
+		float: right;
+		width: 40%;
+	}
+	.blog-post .picture-background, .projects .picture-background {
+		height: 60%;
+		width: 60%;
+	}
 }
