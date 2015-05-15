@@ -68,13 +68,13 @@ test('menu blog link, links to blog page', function(assert){
 test('if a carousel element exists ', function(){
 	var iframe = document.getElementById('iframe');
 	var target = iframe.contentDocument || iframe.contentWindow.document;
-	var initial = target.getElementByClassName('carousel');
+	var initial = target.getElementsByClassName('carousel');
 
 	equal(!!initial,true)
 });
 
 test("If a carousel container exists", function (){
-	var iframe = document.getElementById(‘iframe’);
+	var iframe = document.getElementById('iframe');
 	var target = iframe.contentDocument || iframe.contentWindow.document;
 	var initial=target.getElementById(‘carouselContainer’);
 	equal(!!initial,true);
