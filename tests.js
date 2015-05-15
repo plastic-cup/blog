@@ -74,7 +74,7 @@ test('if a carousel element exists ', function(){
 });
 
 test("If a carousel container exists", function (){
-	var iframe = document.getElementById(‘iframe’);
+	var iframe = document.getElementById('iframe');
 	var target = iframe.contentDocument || iframe.contentWindow.document;
 	var initial=target.getElementById(‘carouselContainer’);
 	equal(!!initial,true);
