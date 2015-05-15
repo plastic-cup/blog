@@ -78,7 +78,7 @@ test("If a carousel container exists", function (){
 	var target = iframe.contentDocument || iframe.contentWindow.document;
 	var initial=target.getElementById('carouselContainer');
 	equal(!!initial,true);
-}
+})
 
 test('If clicking the arrow will go to next post', function (){
 	var iframe = document.getElementById('iframe');
