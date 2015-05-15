@@ -255,6 +255,7 @@ p {
 		padding: 0;
 		display: inline-block;
 		width: 100%;
+		font-size: 0.5em;
 	}
 	#blog-carousel {
 		margin-left: 5%;
@@ -265,5 +266,9 @@ p {
 		margin-right: 5%;
 		float: right;
 		width: 40%;
+	}
+	.blog-post .picture-background, .projects .picture-background {
+		height: 60%;
+		width: 60%;
 	}
 }
