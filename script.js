@@ -80,8 +80,6 @@ filterMethod.call(filterMethod.call(document.getElementById('blog-carousel').chi
   element.addEventListener("click",carouselShift(1, element))
 })
 
-document.getElementsByClassName[0].addEventListener("click",carouselShift(1,this));
-
 // var start;
 // var stop;
 // var variables = {
