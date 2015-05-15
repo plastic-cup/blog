@@ -72,11 +72,11 @@ var carouselShift = function(shiftAmount, newThis){
 var filterMethod = Array.prototype.filter;
 
 filterMethod.call(filterMethod.call(document.getElementById('blog-carousel').children, function(element){
-  console.log(element);
+  console.log(element, a);
   return element.className === 'carousel';
-}), function(element){
+}).children, function(element){
   console.log(element);
-  return(element).className === 'right-arrow';
+  return(elemen,at).className === 'right-arrow';
 }).forEach(function(element){
   element.addEventListener("click",carouselShift(1, element))
 })
