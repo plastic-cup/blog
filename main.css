@@ -6,6 +6,7 @@ body {
 	font-family: sans-serif;
 	background-color: #eee;
 	color: #222;
+	background-image: url('images/bg.png');
 }
 
 div {
@@ -21,6 +22,7 @@ hr {
 
 #container{
 	width:100%;
+	
 }
 
 #hamburger {
@@ -157,11 +159,28 @@ p {
 	margin-left: auto; /* these two lines centre it */
 	margin-right: auto;
 	padding: 5%;
+	overflow: auto; /* container stretches if contents are too big */
+}
+
+#main-blog-container{
+	width: 95%;
+	padding: 0;
+	margin-top: 10%;
+
+}
+
+#blog-h1{
+	margin-bottom: 8%;
+	font-size: 5em;
 }
 
 
-.main-blog{
-	width: 70%;
+.main-blog{ /* OVER HERE */
+	width: 40%;
+	margin-left: 5%;
+	float: left;
+	padding: 10px;
+	background-color: white;
 }
 
 .mini-blog, .projects{
