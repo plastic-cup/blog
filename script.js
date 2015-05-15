@@ -46,7 +46,7 @@ var carouselShift = function(shiftAmount){
 
 var carouselShift = function(shiftAmount, newThis){
   return function(){
-  var children = newThis.parentNode.children;
+  var children = newThis.children;
   console.log(children);
   children = filterMethod.call(children, function(elem){
     return elem.className === 'mini-blog';
