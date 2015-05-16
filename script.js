@@ -2,6 +2,7 @@ $('.face').click(function(){
   var profileToShow = '#'+$(this).attr('id')+'Profile';
   $('.profile').addClass('hidden');
   $(profileToShow).toggleClass('hidden');
+  console.log($(profileToShow));
 })
 
 $('#hamburger').click(function(){
