@@ -38,20 +38,26 @@ var arrayify = function(enumerable){
 
 var carousels = arrayify(document.getElementsByClassName('carousel'));
 
-var rightArrows = [];
-var leftArrows = [];
+var T ={};
+
+var start = function(event){
+  T.start = event.targetTouches[0].pageX;
+}
+
+var end = function(event){
+  var distance = T.start - event.changedTouches[0].pageX;
+  if (distance > 150) carouselShift(1, event.target.parentNode.parentNode)();
+  if (distance < -150) carouselShift(-1, event.target.parentNode.parentNode)();
+
+}
 
 carousels.forEach(function(carousel){
   arrayify(carousel.children).forEach(function(element){
-    if (element.className === 'right-arrow') rightArrows.push(element);
-    if (element.className === 'left-arrow') leftArrows.push(element);
+    if (element.className === 'right-arrow') element.addEventListener('click',carouselShift(1,element));
+    if (element.className === 'left-arrow') element.addEventListener('click',carouselShift(-1,element));
+    if (element.className === 'mini-blog' || element.className === 'mini-project'){
+      element.addEventListener('touchstart', start);
+      element.addEventListener('touchend', end);
+    }
   })
-});
-
-rightArrows.forEach(function(arrow){
-  arrow.addEventListener('click',carouselShift(1,arrow));
-});
-
-leftArrows.forEach(function(arrow){
-  arrow.addEventListener('click',carouselShift(-1,arrow));
 });
