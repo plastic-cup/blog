@@ -1,7 +1,8 @@
 $('.face').click(function(){
   var profileToShow = '#'+$(this).attr('id')+'Profile';
+  var startsHidden = !$(profileToShow).hasClass('hidden');
   $('.profile').addClass('hidden');
-  $(profileToShow).toggleClass('hidden');
+  $(profileToShow).toggleClass('hidden', startsHidden);
 })
 
 $('#hamburger').click(function(){
