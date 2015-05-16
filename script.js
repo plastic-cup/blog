@@ -30,16 +30,18 @@ $('#hamburger').click(function(){
   $('#navigation').toggleClass('hidden');
 });
 
+//This could be written more succinctly with nextSibling / previousSibling.
+//That method would make jumps harder to write, so I'm sticking with this for now.
+
 var carouselShift = function(shiftAmount, newThis){
   return function(){
-  var children = newThis.parentNode.children;
-  children = filterMethod.call(children, function(elem){
-    return elem.className === 'mini-blog';
-  })
+    var children = arrayMethods.call(newThis.parentNode.children);
+    children = children.filter(function(elem){
+      return elem.className === 'mini-project' || elem.className === 'mini-blog';
+    })
     var shift = shiftAmount || 1;
     for(var i = 0; i < children.length; i+=1){
       if(children[i].nodeType == 1){
-        console.log(children[i]);
         if (children[i].style.display !== 'none') {
           children[i].style.display = 'none';
           children[i+shift] ? children[i+shift].style.display = 'block' : children[0].style.display = 'block';
@@ -51,48 +53,24 @@ var carouselShift = function(shiftAmount, newThis){
 };
 
 
-var filterMethod = Array.prototype.filter;
+var arrayMethods = [].slice;
 
-filterMethod.call(filterMethod.call(document.getElementById('blog-carousel').children, function(element){
-  return element.className === 'carousel';
-}).children , function(element){
-  return element.className === 'right-arrow';
-}).forEach(function(element){
-  element.addEventListener("click",carouselShift(1, element))
-})
+var carousels = arrayMethods.call(document.getElementsByClassName('carousel'));
 
-// var start;
-// var stop;
-// var variables = {
-//   startX: 0,
-//   ev: undefined
-// }
-// var start = function(ev,elem){
-//   return function(){
-//     variables.startX = ev.pageX;
-//     variables.ev = ev;
-//   }
-// }
+var rightArrows = [];
+var leftArrows = [];
 
-// var stop = function(ev,elem){
-//   var distX = ev.pageX - variables.startX;
-//   console.log(distX);
-//   if (distX > 100){
-//     this.carouselShift(-1);
-//   }
-//   if (distX < -100){
-//     this.carouselShift(1);
-//   }
-// }
+carousels.forEach(function(carousel){
+  arrayMethods.call(carousel.children).forEach(function(element){
+    if (element.className === 'right-arrow') rightArrows.push(element);
+    if (element.className === 'left-arrow') leftArrows.push(element);
+  })
+});
 
-// filterMethod.call(document.getElementsByClassName('carousel')[0].children, function(element){
-//   return element.className === 'mini-blog' || element.class === 'projects';
-// }).forEach(function(element){element.addEventListener("touchstart",function(ev){
-//   start(ev,element);
-// })});
+rightArrows.forEach(function(arrow){
+  arrow.addEventListener('click',carouselShift(1,arrow));
+});
 
-// filterMethod.call(document.getElementsByClassName('carousel')[0].children, function(element){
-//   return element.className === 'mini-blog' || element.class === 'projects';
-// }).forEach(function(element){element.addEventListener("touchend",function(ev){
-//   stop(ev,element);
-// })});
+leftArrows.forEach(function(arrow){
+  arrow.addEventListener('click',carouselShift(-1,arrow));
+});
