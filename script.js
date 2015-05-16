@@ -1,7 +1,7 @@
 $('.face').click(function(){
   var profileToShow = '#'+$(this).attr('id')+'Profile';
   $('.profile').addClass('hidden');
-  $(profileToShow).removeClass('hidden');
+  $(profileToShow).toggleClass('hidden');
 })
 
 $('#hamburger').click(function(){
@@ -32,7 +32,7 @@ var carouselShift = function(shiftAmount, newThis){
 
 
 var arrayify = function(enumerable){
-  [].slice.call(enumerable);
+  return [].slice.call(enumerable);
 }
 
 var carousels = arrayify(document.getElementsByClassName('carousel'));
