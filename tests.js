@@ -4,7 +4,8 @@ test('having a logo (something on page has id of logo)', function(){
 	var target = iframe.contentDocument || iframe.contentWindow.document;
 	var initial = target.getElementById('logo');
 
-	equal(!!initial,true)
+	equal(!!initial,true);
+	equal(true,false);
 
 	// function ok(argument){
 	// 	if (argument === true) TEST PASS
@@ -86,9 +87,9 @@ test('If clicking the arrow will go to next post', function (){
 	var children = target.getElementById('carousel').children;
 	for(var i = 0; i<children.length;i++){
 		if(children[i].style.display !=='none') {
-			var seen =children[i];	
+			var seen =children[i];
 			target.getElementById('right-arrow').click();
-			var done=assert.async(); 
+			var done=assert.async();
 			setTimeout(function(){
 				equal(	seen.style.display, 'none');
 				done();

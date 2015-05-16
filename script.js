@@ -35,7 +35,7 @@ $('#hamburger').click(function(){
 
 var carouselShift = function(shiftAmount, newThis){
   return function(){
-    var children = arrayMethods.call(newThis.parentNode.children);
+    var children = arrayify(newThis.parentNode.children);
     children = children.filter(function(elem){
       return elem.className === 'mini-project' || elem.className === 'mini-blog';
     })
@@ -53,15 +53,17 @@ var carouselShift = function(shiftAmount, newThis){
 };
 
 
-var arrayMethods = [].slice;
+var arrayify = function(enumerable){
+  [].slice.call(enumerable);
+}
 
-var carousels = arrayMethods.call(document.getElementsByClassName('carousel'));
+var carousels = arrayify(document.getElementsByClassName('carousel'));
 
 var rightArrows = [];
 var leftArrows = [];
 
 carousels.forEach(function(carousel){
-  arrayMethods.call(carousel.children).forEach(function(element){
+  arrayify(carousel.children).forEach(function(element){
     if (element.className === 'right-arrow') rightArrows.push(element);
     if (element.className === 'left-arrow') leftArrows.push(element);
   })
