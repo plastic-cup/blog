@@ -206,6 +206,11 @@ p {
 .mini-blog, .mini-project{
 	width: 100%;
 	background-color: white;
+	display: none;
+}
+
+.mini-blog:nth-of-type(2), .mini-project:nth-of-type(2){
+	display: block;
 }
 
 .main-blog, .mini-blog, .mini-project {
@@ -213,6 +218,18 @@ p {
 	margin-bottom: 10%;
 	border: solid black 1px;
 	box-shadow: 15px 15px 10px rgba(10,10,10,0.5); /* 3rd param = blur radius. rgba --> a is for opacity */
+}
+
+.carousel .left-arrow {
+	width: 5%;
+	height: 5%;
+	content:url('https://cdn3.iconfinder.com/data/icons/arrows/16/arrow__chevron-big-circle-3-01-512.png');
+}
+
+.carousel .right-arrow {
+	width: 5%;
+	height: 5%;
+	content:url('https://cdn3.iconfinder.com/data/icons/arrows/16/arrow__chevron-big-circle-4-01-512.png');
 }
 
 .main-blog .title, .mini-blog .title, .mini-project .title{
