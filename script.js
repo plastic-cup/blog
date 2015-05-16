@@ -1,5 +1,7 @@
 $('.face').click(function(){
-  $('.profile').toggleClass('hidden');
+  var profileToShow = '#'+$(this).attr('id')+'Profile';
+  $('.profile').addClass('hidden');
+  $(profileToShow).removeClass('hidden');
 })
 
 $('#hamburger').click(function(){
