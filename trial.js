@@ -4,6 +4,6 @@ function appendText(){
 	paragraph.appendChild(textnode);
 	document.body.appendChild(paragraph);
 }
-for(var i = 1; i <= 100000; i++){
+for(var i = 1; i <= 50000; i++){
 	appendText();
 }
