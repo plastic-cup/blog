@@ -4,10 +4,10 @@ function appendText(){
 	paragraph.appendChild(textnode);
 	document.body.appendChild(paragraph);
 }
-for(var i = 1; i <= 1000; i++){
+for(var i = 1; i <= 2000; i++){
 	insertPic();
 }
-
+var i = 0;
 function insertPic(){
   
   var element = document.createElement('img');
